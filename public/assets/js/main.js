@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 console.log(THREE);
 console.log(gsap);
 const COLORS = {
-  background: "white",
+  background: "#8888ff",
   light: "#ffffff",
   sky: "#aaaaff",
   ground: "#88ff88",
@@ -142,7 +142,7 @@ loader.load(
  });
         tl.to(modal.position, { x: -1 }, section);
         section += 1;
-        tl.to(modal.rotation, { y: -1 }, section);
+        tl.to(modal.rotation, { y: 1 }, section);
         section += 1;
         tl.to(modal.scale, { z: 2, x: 2, y: 2 }, section);
         section += 1;

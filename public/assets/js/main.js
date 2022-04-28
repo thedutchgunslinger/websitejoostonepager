@@ -130,8 +130,8 @@ loader.load(
      trigger: ".content",
      start: "top top",
      end: "bottom bottom",
-     scrub: 0.1,
-     markers: true,
+     scrub: true,
+     markers: false,
      reversed: true,
      paused: true,
    },
@@ -145,6 +145,8 @@ loader.load(
         tl.to(modal.rotation, { y: -1 }, section);
         section += 1;
         tl.to(modal.scale, { z: 2, x: 2, y: 2 }, section);
+        section += 1;
+        tl.to(modal.position, { z: -10 }, section);
 
         renderer.render(scene, camera);
       }
